@@ -101,11 +101,12 @@ footer {
 }
 
 footer a {
-    color: red;
+    color: gray;
+    text-decoration: none;
 }
 
 footer a::selection {
-    color: rebeccapurple;
+    background-color: gold;
 }
 
 
@@ -195,15 +196,35 @@ footer a::selection {
     display: flex;
 }
 
+.img3x3 img:hover {
+    transition: transform 0.9s;
+    transform: scale(1.1);
+}
+
+.img3x5 img:hover {
+    transition: transform 0.9s;
+    transform: scale(1.1);
+}
+
+.img5x3 img:hover {
+    transition: transform 0.9s;
+    transform: scale(1.1);
+}
+
 @media screen and (max-width:768px) {
+    .conteiner {
+        width: 700px;
+    }
+
     .gallery {
-        width: 750px;
+        width: 700px;
     }
 
     .img3x3 {
         width: 200px;
         height: 200px;
         margin: 10px;
+
     }
 
     .img3x5 {
@@ -213,16 +234,17 @@ footer a::selection {
     }
 
     .img5x3 {
-        width: 200px;
+        width: 180px;
         height: 420px;
         margin: 10px;
     }
 
     .group4 {
-        width: 530px;
+        width: 500px;
     }
-footer{
-    font-size: 20px;
-    margin: 0;
-}
+
+    footer {
+        font-size: 20px;
+        margin: 0;
+    }
 }
